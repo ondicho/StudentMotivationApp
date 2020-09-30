@@ -14,8 +14,29 @@ public class App {
         Gson gson = new Gson();
         Connection conn;
 
+        String connectionString = "jdbc:postgresql://localhost:5432/student_motivation_app";
+        Sql2o sql2o = new Sql2o(connectionString, "ondicho", "1234");
         userDao=new Sql2oUserDao(sql2o);
         adminDao=new Sql2oAdminDao(sql2o);
         conn = sql2o.open();
+
+        //user
+        post("/users/new", "application/json", (req, res) -> { //accept a request in format JSON from an app
+            user user= gson.fromJson(req.body(), user.class);//make java from JSON with GSON
+            userDao.add(user);//Do our thing with our DAO
+            res.status(201);//A-OK! But why 201??
+            return gson.toJson(user);//send it back to be displayed
+        });
+
+        get("/users", "application/json", (req, res) -> { //accept a request in format JSON from an app
+            return gson.toJson(userDao.getAll());//send it back to be displayed
+        });
+
+//        get("/users/:id", "application/json", (req, res) -> { //accept a request in format JSON from an app
+//            res.type("application/json");
+//            int id= Integer.parseInt(req.params("id"));
+//            res.type("application/json");
+//            return gson.toJson(userDao.findById(id));
+//        });
     }
 }
