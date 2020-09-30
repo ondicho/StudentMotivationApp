@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="models.AdminTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-09-29T23:46:48" hostname="makena-ThinkPad-X1-Carbon-3rd" time="0.004">
+  <properties/>
+  <testcase name="AdminTest_getCorrectName_String" classname="models.AdminTest" time="0.001"/>
+  <testcase name="AdminTest_getCorrectId_int" classname="models.AdminTest" time="0.0"/>
+  <testcase name="AdminTest_getCorrectEmail_String" classname="models.AdminTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
