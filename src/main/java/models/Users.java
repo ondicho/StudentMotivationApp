@@ -1,21 +1,21 @@
 package models;
 
-public class user {
+public class Users {
 
     private String name;
     private int age;
     private int id;
     private String email;
-    private String department;
-    private int phoneNumber;
+    private String gender;
 
-    public user(String name, int age, int id, String email, String department, int phoneNumber){
+
+    public Users(String name, int age, int id, String email, String gender){
         this.name = name;
         this.age = age;
         this.id = id;
         this.email = email;
-        this.department = department;
-        this.phoneNumber = phoneNumber;
+        this.gender = gender;
+
     }
 
     public String getName(){
@@ -31,12 +31,10 @@ public class user {
     public String getEmail(){
         return email;
     }
-    public String getDepartment(){
-        return department;
+    public String getGender(){
+        return gender;
     }
-    public int getPhoneNumber(){
-        return phoneNumber;
-    }
+
     public void setName(){
         this.name = name;
     }
@@ -49,10 +47,8 @@ public class user {
     public void setEmail(){
         this.email = email;
     }
-    public void setDepartment(){
-        this.department = department;
+    public void setGender(){
+        this.gender = gender;
     }
-    public void setPhoneNumber(){
-        this.phoneNumber = phoneNumber;
-    }
+
 }
