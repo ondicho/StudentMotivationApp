@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638e30df-ad10-4108-bd9e-eba69eb26ef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AdminDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/Sql2oAdminDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/AdminTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AdminDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Sql2oAdminDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Sql2oUserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/userDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/create.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/user.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,26 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.AdminTest">
+    <configuration name="AdminTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;models.AdminTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="userTest.getName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -137,6 +157,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AdminTest" />
         <item itemvalue="Gradle.userTest.getName" />
       </list>
     </recent_temporary>
@@ -160,6 +181,22 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="804" y="240" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1601421028760" />
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1601446195073">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1601446195073" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1601446195073">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1601446195073" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1601446195072">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1601446195072" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1601446195073">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1601446195073" />
     <state x="742" y="308" width="497" height="497" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1601422471986">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
