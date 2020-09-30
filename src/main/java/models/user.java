@@ -9,7 +9,7 @@ public class user {
     private String department;
     private int phoneNumber;
 
-    public user(String name, int age, int id, String email, String department, int phoneNumber){
+    public user(int id,String name, int age, String email, String department, int phoneNumber){
         this.name = name;
         this.age = age;
         this.id = id;

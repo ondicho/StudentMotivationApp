@@ -9,7 +9,7 @@ public class Admin {
     public int id;
     public String email;
 
-    public Admin(String name, int id, String email){
+    public Admin(int id,String name,String email){
         this.name = name;
         this.id= id;
         this.email = email;

@@ -1,0 +1,2 @@
+DROP DATABASE student_motivation_app;
+DROP DATABASE student_motivation_app_test;
