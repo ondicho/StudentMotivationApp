@@ -38,5 +38,17 @@ public class App {
 //            res.type("application/json");
 //            return gson.toJson(userDao.findById(id));
 //        });
+
+//        post("/admin/new", "application/json", (req, res) -> { //accept a request in format JSON from an app
+//            Admin admin= gson.fromJson(req.body(), Admin.class);//make java from JSON with GSON
+//            adminDao.add(user);//Do our thing with our DAO
+//            res.status(201);//A-OK! But why 201??
+//            return gson.toJson(admin);//send it back to be displayed
+//        });
+//
+//        get("/users", "application/json", (req, res) -> { //accept a request in format JSON from an app
+//            return gson.toJson(userDao.getAll());//send it back to be displayed
+//        });
+
     }
 }
