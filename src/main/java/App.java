@@ -32,12 +32,12 @@ public class App {
             return gson.toJson(userDao.getAll());//send it back to be displayed
         });
 
-//        get("/users/:id", "application/json", (req, res) -> { //accept a request in format JSON from an app
-//            res.type("application/json");
-//            int id= Integer.parseInt(req.params("id"));
-//            res.type("application/json");
-//            return gson.toJson(userDao.findById(id));
-//        });
+        get("/users/:id", "application/json", (req, res) -> { //accept a request in format JSON from an app
+            res.type("application/json");
+            int id= Integer.parseInt(req.params("id"));
+            res.type("application/json");
+            return gson.toJson(userDao.findById(id));
+        });
 
 //        post("/admin/new", "application/json", (req, res) -> { //accept a request in format JSON from an app
 //            Admin admin= gson.fromJson(req.body(), Admin.class);//make java from JSON with GSON

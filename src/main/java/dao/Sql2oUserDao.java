@@ -15,7 +15,7 @@ public class Sql2oUserDao implements userDao {
 
     @Override
     public void add(user user) {
-        String sql = "INSERT INTO users (name, age, id) VALUES (:name, :age, :id)"; //if you change your model, be sure to update here as well!
+        String sql = "INSERT INTO users (name, age, email,department,phoneNumber,role) VALUES (:name, :age, :email,:department,:phoneNumber,:role)"; //if you change your model, be sure to update here as well!
         try (Connection con = sql2o.open()) {
             int id = (int) con.createQuery(sql, true)
                     .bind(user)
@@ -32,6 +32,15 @@ public class Sql2oUserDao implements userDao {
         try (Connection con = sql2o.open()) {
             return con.createQuery("SELECT * FROM users")
                     .executeAndFetch(user.class);
+        }
+    }
+
+    @Override
+    public user findById(int id) {
+        try (Connection con=sql2o.open()) {
+            return con.createQuery("SELECT FROM users WHERE id=:id")
+                    .addParameter("id",id)
+                    .executeAndFetchFirst(user.class);
         }
     }
 
