@@ -12,10 +12,9 @@ public class user {
     private int phoneNumber;
     private String role;
 
-    public user(int id, String name, int age, String email, String department, int phoneNumber, String role) {
+    public user(String name, int age, String email, String department, int phoneNumber, String role) {
         this.name = name;
         this.age = age;
-        this.id = id;
         this.email = email;
         this.department = department;
         this.phoneNumber = phoneNumber;

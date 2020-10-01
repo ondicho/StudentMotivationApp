@@ -16,7 +16,8 @@ CREATE TABLE IF NOT EXISTS users (
   age int,
   email VARCHAR,
   department VARCHAR,
-  phoneNumber int
+  phoneNumber int,
+  role varchar
 );
 
 CREATE DATABASE student_motivation_app_test WITH TEMPLATE student_motivation_app;
