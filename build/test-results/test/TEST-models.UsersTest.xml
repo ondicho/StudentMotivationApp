@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="models.UsersTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-10-01T13:57:10" hostname="makena-ThinkPad-X1-Carbon-3rd" time="0.003">
+  <properties/>
+  <testcase name="getCorrectGender_String" classname="models.UsersTest" time="0.001"/>
+  <testcase name="getCorrectId_Int" classname="models.UsersTest" time="0.0"/>
+  <testcase name="getCorrectName_String" classname="models.UsersTest" time="0.0"/>
+  <testcase name="getCorrectEmail_String" classname="models.UsersTest" time="0.0"/>
+  <testcase name="getCorrectAge_Int" classname="models.UsersTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

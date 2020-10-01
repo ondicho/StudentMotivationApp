@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638e30df-ad10-4108-bd9e-eba69eb26ef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AdminDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Sql2oAdminDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Sql2oUserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/userDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/create.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/user.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/Sql2oUsersDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/Sql2oUsersDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/UsersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/UsersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,14 +23,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit3 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1iBSEI5TIFGI9jNcfUoOeu4vPzb" />
   <component name="ProjectViewState">
@@ -57,8 +58,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="models" />
       <recent name="dao" />
+      <recent name="models" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="dao" />
@@ -68,13 +69,51 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AdminTest">
+  <component name="RunManager" selected="Gradle.UsersTest">
     <configuration name="AdminTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;models.AdminTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;models.UsersTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersTest.getCorrectName_String" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;models.UsersTest.getCorrectName_String&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -157,6 +196,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UsersTest" />
+        <item itemvalue="Gradle.UsersTest.getCorrectName_String" />
         <item itemvalue="Gradle.AdminTest" />
         <item itemvalue="Gradle.userTest.getName" />
       </list>
@@ -181,25 +222,25 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="804" y="240" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1601421028760" />
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1601446195073">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1601568915141">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1601446195073" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1601446195073">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1601568915141" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1601568915140">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1601446195073" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1601446195072">
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1601568915140" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1601568915139">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1601446195072" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1601446195073">
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1601568915139" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1601568915140">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1601446195073" />
-    <state x="742" y="308" width="497" height="497" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1601422471986">
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1601568915140" />
+    <state x="742" y="308" width="497" height="497" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1601505239558">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="742" y="308" width="497" height="497" key="com.intellij.testIntegration.createTest.CreateTestDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1601422471986" />
+    <state x="742" y="308" width="497" height="497" key="com.intellij.testIntegration.createTest.CreateTestDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1601505239558" />
   </component>
 </project>
