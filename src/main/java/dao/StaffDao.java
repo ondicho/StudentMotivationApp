@@ -1,8 +1,9 @@
 package dao;
 import models.user;
 import models.Motivation;
+import models.Category;
 
 public interface StaffDao {
-    void  deleteById(int userId);
+    void  deleteMotivationByUserId(user user,Motivation motivation);
     void add(Category category);
 }

@@ -2,6 +2,7 @@ package dao;
 
 
 
+import models.Motivation;
 import models.user;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
@@ -22,6 +23,20 @@ public class Sql2oUserDao implements userDao {
                     .executeUpdate()
                     .getKey();
             user.setId(id);
+        } catch (Sql2oException ex) {
+            System.out.println(ex);
+        }
+    }
+
+    @Override
+    public void add(Motivation motivation) {
+        String sql = "INSERT INTO motivation (content,userId) VALUES (:content,:userId)"; //if you change your model, be sure to update here as well!
+        try (Connection con = sql2o.open()) {
+            int id = (int) con.createQuery(sql, true)
+                    .bind(motivation)
+                    .executeUpdate()
+                    .getKey();
+            motivation.setId(id);
         } catch (Sql2oException ex) {
             System.out.println(ex);
         }

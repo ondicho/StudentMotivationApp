@@ -1,5 +1,7 @@
 package dao;
 
+import models.Category;
+import models.Motivation;
 import models.user;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
@@ -21,6 +23,20 @@ public class Sql2oStaffDao implements userDao,StaffDao{
                     .executeUpdate()
                     .getKey();
             user.setId(id);
+        } catch (Sql2oException ex) {
+            System.out.println(ex);
+        }
+    }
+
+    @Override
+    public void add(Motivation motivation) {
+        String sql = "INSERT INTO motivation (content,userId) VALUES (:content,:userId)"; //if you change your model, be sure to update here as well!
+        try (Connection con = sql2o.open()) {
+            int id = (int) con.createQuery(sql, true)
+                    .bind(motivation)
+                    .executeUpdate()
+                    .getKey();
+            motivation.setId(id);
         } catch (Sql2oException ex) {
             System.out.println(ex);
         }
@@ -50,6 +66,33 @@ public class Sql2oStaffDao implements userDao,StaffDao{
             con.createQuery(sql)
                     .addParameter("id", id)
                     .executeUpdate();
+        } catch (Sql2oException ex) {
+            System.out.println(ex);
+        }
+    }
+
+
+    @Override
+    public void deleteMotivationByUserId(user user, Motivation motivation) {
+        String sql = "DELETE FROM  motivation WHERE userId=:userId";
+        try (Connection con = sql2o.open()) {
+            con.createQuery(sql)
+                    .addParameter("userId", user.getId())
+                    .executeUpdate();
+        } catch (Sql2oException ex){
+            System.out.println(ex);
+        }
+    }
+
+    @Override
+    public void add(Category category) {
+        String sql = "INSERT INTO categories (categoryName, categoryDescription ) VALUES (:categoryName, :categoryDescription)"; //if you change your model, be sure to update here as well!
+        try (Connection con = sql2o.open()) {
+            int id = (int) con.createQuery(sql, true)
+                    .bind(category)
+                    .executeUpdate()
+                    .getKey();
+            category.setId(id);
         } catch (Sql2oException ex) {
             System.out.println(ex);
         }
