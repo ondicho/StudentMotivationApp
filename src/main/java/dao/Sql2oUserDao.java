@@ -2,6 +2,7 @@ package dao;
 
 
 
+import models.Category;
 import models.Motivation;
 import models.user;
 import org.sql2o.Connection;
@@ -47,6 +48,22 @@ public class Sql2oUserDao implements userDao {
         try (Connection con = sql2o.open()) {
             return con.createQuery("SELECT * FROM users")
                     .executeAndFetch(user.class);
+        }
+    }
+
+    @Override
+    public List<Motivation> getAllMotivation() {
+        try (Connection con = sql2o.open()) {
+            return con.createQuery("SELECT * FROM motivation")
+                    .executeAndFetch(Motivation.class);
+        }
+    }
+
+    @Override
+    public List<Category> getAllCategories() {
+        try (Connection con = sql2o.open()) {
+            return con.createQuery("SELECT * FROM categories")
+                    .executeAndFetch(Category.class);
         }
     }
 

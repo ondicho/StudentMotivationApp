@@ -49,6 +49,21 @@ public class Sql2oStaffDao implements userDao,StaffDao{
                     .executeAndFetch(user.class);
         }
     }
+    @Override
+    public List<Motivation> getAllMotivation() {
+        try (Connection con = sql2o.open()) {
+            return con.createQuery("SELECT * FROM motivation")
+                    .executeAndFetch(Motivation.class);
+        }
+    }
+
+    @Override
+    public List<Category> getAllCategories() {
+        try (Connection con = sql2o.open()) {
+            return con.createQuery("SELECT * FROM categories")
+                    .executeAndFetch(Category.class);
+        }
+    }
 
     @Override
     public user findById(int id) {

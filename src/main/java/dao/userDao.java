@@ -1,5 +1,6 @@
 package dao;
 
+import models.Category;
 import models.Motivation;
 import models.user;
 
@@ -12,6 +13,8 @@ public interface userDao {
     void add(Motivation motivation);
 
     List<user> getAll();
+    List<Motivation>getAllMotivation();
+    List<Category>getAllCategories();
     user findById(int id);
 
     void deleteById(int id);
